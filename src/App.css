@@ -13,6 +13,10 @@
   }
 }
 
+@font-face {
+  font-family: "SuperMario";
+  src: url(./assets/fonts/SuperMario256.woff);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +38,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "Arvo";
+  src: url(./assets/fonts/Arvo-Regular.woff);
+}
+
+.MuiTypography-h3{
+  font-size: 55px !important;
+}
+@media screen and (max-width: 600px){
+  .MuiTypography-h3{
+    font-size: 40px !important;
   }
 }

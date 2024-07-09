@@ -5,4 +5,10 @@ const PageWrapper = styled.div`
     min-height: 100vh;
 `
 
-export { PageWrapper }
+const Image = styled.img`
+    width: 100%;
+    max-width: ${props=>props.mw ? props.mw : "100%"};
+    height: auto;
+`
+
+export { PageWrapper ,Image}

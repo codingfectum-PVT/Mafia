@@ -22,11 +22,14 @@ const MobileMainMenu = styled.div`
   }
 `;
 const SiteLogo = styled.img`
-  max-width: 100%;
+  max-width: 200px;
   height: auto;
+  width: 100%;
+  padding-right: 40px;
+  /* margin-top: 20px; */
 `;
 const MenuLink = styled(Link)`
-  font-size: max(15px, 17px);
+  font-size: 15px;
   font-family: "poppins-light";
   font-weight: bolder;
   color: ${ (props) => props.theme.textPrimary};
@@ -45,14 +48,14 @@ const MenuLink = styled(Link)`
     padding: ${ (props) => props.p? props.p: '15px 0 15px 20px'};
     text-align: left;
   }
-  &:last-child {
+  /* &:last-child {
     border-width: 0px;
-    background: red;
+    /* background: red; */
+  /* } */
     width: calc(100% - 40px);
     margin: 15px auto;
     padding: 10px 20px;
     text-align: center;
-  }
 `;
 
 const DrawerBox = styled(Box)`
