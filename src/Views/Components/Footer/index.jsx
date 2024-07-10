@@ -64,6 +64,10 @@ export default function Footer() {
                         <SocialLogo src={uniswap} />
                     </MenuLink>
                 </Grid>
+                <Grid xs={12} textAlign='center'>
+                <Paragraph variant="body2" fontWeight="900" fontSize={{xs:"18px"}}>Email: info@bighornreddragon.com</Paragraph>
+
+                </Grid>
             </Grid>
         </Container>
     </SectionWrapper>

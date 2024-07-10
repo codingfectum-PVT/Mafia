@@ -8,7 +8,7 @@ import { MenuLink, SiteLogo } from '../LockerMenu/styles'
 import { Image } from '../../Styles/style'
 import Paragraph from '../Paragraph'
 import BigHorn from '../BigHorn'
-import { CA } from '../../../links'
+import { CA, dexToolsLink, tgLink, xLink } from '../../../links'
 
 const SectionWrapper = emotionStyled(Box)`
     min-height: 100vh;
@@ -51,13 +51,13 @@ function Header() {
                         <MenuLinkLogo>
                             <SiteLogo src={logo} />
                         </MenuLinkLogo>
-                        <MenuLinkex href="#">
+                        <MenuLinkex href={dexToolsLink} target='_blank'>
                         Dextools
                         </MenuLinkex>
-                        <MenuLinkex href="#">
+                        <MenuLinkex href={xLink} target='_blank'>
                         X(Twitter)
                         </MenuLinkex>
-                        <MenuLinkex href="#">
+                        <MenuLinkex href={tgLink} target='_blank'>
                         Telegram
                         </MenuLinkex>
                     </Box>
