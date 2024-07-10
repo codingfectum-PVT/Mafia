@@ -16,8 +16,9 @@ const MobileMainMenu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  @media (min-width: 900px) {
+  background: #000;
+  padding: 0 10px;
+  @media (min-width: 600px) {
     display: none;
   }
 `;
@@ -43,10 +44,10 @@ const MenuLink = styled(Link)`
     color: #ffffff;
     transition-duration: 0.5s;
   }
-  @media (max-width: 899px) {
+  @media (max-width: 599px) {
     display: block;
-    padding: ${ (props) => props.p? props.p: '15px 0 15px 20px'};
-    text-align: left;
+    padding: ${ (props) => props.p? props.p: '10px'};
+    text-align: center;
   }
   /* &:last-child {
     border-width: 0px;
@@ -60,7 +61,7 @@ const MenuLink = styled(Link)`
 
 const DrawerBox = styled(Box)`
   width: 250px;
-  background: ${(props) => props.theme.bgPrimary};
+  background: #000;
   min-height: calc( 100vh );
   text-align: center;
   padding-top: 20px;
@@ -72,7 +73,7 @@ const DrawerBox = styled(Box)`
 const DrawerDivider = styled.div``
 
 const MenuButton = styled(Button)`
-  background: ${ (props)=> props.theme.pageColor};
+  background: #000;
   width: 35px;
   min-width: unset;
   padding-left: 6px;
@@ -96,11 +97,11 @@ const Humburgger = styled.span`
 
   &::after,&::before{
     content: 'menu';
-    background: ${ (props)=> props.theme.pageColor};
+    background: #000;
     display: block;
     height: 6px;
     width: 100%;
-    color: ${ (props)=> props.theme.pageColor};
+    color: #000;
   }
 
 `;

@@ -2,64 +2,28 @@ import emotionStyled from '@emotion/styled'
 import { Box, Container, Grid } from '@mui/material'
 import React from 'react'
 import headerimg  from '../../../assets/header-img.jpg'
-import logo  from '../../../assets/logo.png'
-import { MenuLink, SiteLogo } from '../LockerMenu/styles'
 import Paragraph from '../Paragraph'
 import BigHorn from '../BigHorn'
-import { CA, dexToolsLink, tgLink, xLink } from '../../../links'
+import { CA } from '../../../links'
+import LockerMenu from '../LockerMenu'
 
 const SectionWrapper = emotionStyled(Box)`
-    min-height: 100vh;
+    min-height: 100dvh;
     background-image: url(${headerimg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    padding-top:10px;
     
 `
-const MenuLinkex = emotionStyled(MenuLink)`
 
-    @media(min-width: 900px){
-        display: inline-block;
-        width: unset;
-        padding: 0 10px;
-        margin: 0;
-    }
-    @media(max-width: 899px){
-        display: none;
-    }
-
-`
-const MenuLinkLogo = emotionStyled(MenuLink)`
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    @media(max-width: 899px){
-        padding: 0 10px;
-        margin: 0;
-    }
-`
 
 function Header() {
   return (
     <SectionWrapper>
+        <LockerMenu/>
         <Container maxWidth="xl">
             <Grid container display="flex" alignContent="space-between" minHeight={{xs:"calc(100vh - 300px)",lg:"auto"}} justifyContent={"center"}>
-                <Grid xs={12}>
-                    <Box style={{backgroundColor: '#000', maxWidth: 620, padding: '20px', margin: '20px auto', display: 'flex', justifyContent: 'center',alignItems: 'center'}}>
-                        <MenuLinkLogo>
-                            <SiteLogo src={logo} />
-                        </MenuLinkLogo>
-                        <MenuLinkex href={dexToolsLink} target='_blank'>
-                        Dextools
-                        </MenuLinkex>
-                        <MenuLinkex href={xLink} target='_blank'>
-                        X(Twitter)
-                        </MenuLinkex>
-                        <MenuLinkex href={tgLink} target='_blank'>
-                        Telegram
-                        </MenuLinkex>
-                    </Box>
-                </Grid>
                 <Grid item xs={12} lg={8} marginBottom={10} display="flex" flexDirection="column" alignItems={"center"} >
                     <BigHorn />
                     <Paragraph maxWidth="300px" fontWeight="bold" marginY="10px">
@@ -69,7 +33,7 @@ function Header() {
                         <Paragraph color="#fff" fontWeight="900">
                             CA
                         </Paragraph>
-                        <Paragraph fontFamily="" color="#fff">
+                        <Paragraph fontFamily="" sx={{wordBreak:"break-all"}} color="#fff">
                             {CA}
                         </Paragraph>
                     </Box>

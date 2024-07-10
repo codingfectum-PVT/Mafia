@@ -2,16 +2,11 @@ import React, { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import { toggleTheme } from '../../../../Redux/switchTheme'
-import { useDispatch, useSelector } from "react-redux";
 import logo from "../../../../assets/logo.png";
-import { MaterialUISwitch, MenuLink, MobileMainMenu, SiteLogo, DrawerBox, DrawerDivider, Humburgger, HumburggerClose, MenuButton } from "../styles";
+import {  MenuLink, MobileMainMenu, SiteLogo, DrawerBox, DrawerDivider, Humburgger, HumburggerClose, MenuButton } from "../styles";
 
 
 const MobileMenu = (props) => {
-  const currentTheme = useSelector( (state) => state.LDTheme.value )
-  const dispatch = useDispatch();
   const [state, setState] = useState({ left: false });
   
   const toggleDrawer = (anchor, open) => (event) => {
@@ -21,7 +16,7 @@ const MobileMenu = (props) => {
   };
   return (
     <MobileMainMenu>
-      <MenuLink href="/" p="15px 0 15px">
+      <MenuLink style={{textAlign:"start"}} href="/" p="0px 0 0px">
         <SiteLogo src={logo} width="150" height='50' />
       </MenuLink>
       <MenuButton onClick={toggleDrawer("left", true)}>
@@ -31,6 +26,7 @@ const MobileMenu = (props) => {
           <Humburgger></Humburgger>
         )}
       </MenuButton>
+      
       <Drawer
         anchor="left"
         open={state["left"]}
@@ -43,24 +39,11 @@ const MobileMenu = (props) => {
         >
           <DrawerDivider>
             <MenuLink href="/">
-              <SiteLogo src={logo} width="150" height='50' />
+              <SiteLogo style={{paddingRight:0}} src={logo} width="150" height='50' />
             </MenuLink>
-            <Divider />
+            <Divider sx={{width:"80%",margin:"0 auto",height:"2px",background:"#ec1826"}}/>
             <List>
               {props.menuList.map((value, i) => <MenuLink key={i} href={value.link}  target={value.target} className={value.customClass + " d-block"}>{value.title}</MenuLink>)}
-            </List>
-          </DrawerDivider>
-          <DrawerDivider>
-            <List>
-              <FormControlLabel
-                control={
-                  <MaterialUISwitch 
-                    sx={{ m: 1 }} 
-                    checked={currentTheme}
-                  />
-                }
-                onClick={() => dispatch(toggleTheme())}
-              />
             </List>
           </DrawerDivider>
         </DrawerBox>
