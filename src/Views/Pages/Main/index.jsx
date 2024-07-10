@@ -1,5 +1,4 @@
 import React from 'react'
-import LockerMenu from '../../Components/LockerMenu'
 import { PageWrapper } from '../../Styles/style'
 import Header from '../../Components/Header'
 import AboutSection from '../../Components/S2_About'

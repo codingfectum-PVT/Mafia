@@ -3,11 +3,9 @@ import { Box, Button, Container, Grid } from '@mui/material'
 import React from 'react'
 import aboutBg  from '../../../assets/aboutBg.jpg'
 import aboutImg  from '../../../assets/about-img.png'
-import logo  from '../../../assets/logo.png'
-import { MenuLink, SiteLogo } from '../LockerMenu/styles'
 import { Image } from '../../Styles/style'
 import Paragraph from '../Paragraph'
-import { tgLink } from '../../../links'
+import { uniSwapLink } from '../../../links'
 
 const SectionWrapper = emotionStyled(Box)`
     min-height: 100vh;
@@ -43,7 +41,7 @@ function AboutSection() {
                     <Paragraph  color="#fff" maxWidth={740} padding={2}>
                     Dive into the fantastical world of Matt Furie's **Big Horn Red Dragon**. This vibrant creation embodies Furie's signature blend of whimsical charm and intricate detail. The Big Horn Red Dragon, with its striking red hue and majestic horns, is a testament to Furie's ability to create captivating and imaginative characters. Whether you're an art enthusiast or a newcomer to Furie's work, the Big Horn Red Dragon promises to enchant and inspire with its unique presence and story. Join us in celebrating this extraordinary piece of art and explore the magic it brings to the world.                   
                     </Paragraph>
-                    <CustomButton href={tgLink}>
+                    <CustomButton href={uniSwapLink}>
                         ape In
                     </CustomButton>
                     <Paragraph fontFamily="" color="#808080">

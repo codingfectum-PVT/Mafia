@@ -6,7 +6,6 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import BigHorn from '../BigHorn';
 import Paragraph from '../Paragraph';
 import { MenuLink } from '../LockerMenu/styles';
-import tax from "../../../assets/tax.jpg"
 import x from "../../../assets/x.jpg"
 import tg from "../../../assets/tg.jpg"
 import dexscreener from "../../../assets/dexscreener.jpg"
