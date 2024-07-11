@@ -132,9 +132,9 @@ const HowToBuy = () => {
                 >  
                 <Box sx={{backgroundColor:"#FFFFFF", minHeight:"220px",padding:"30px 30px 35px",  width:"100%",display:"flex", flexDirection:"column",justifyContent:"start",alignItems:"start",gap:"5px"}}>   
                     <Paragraph variant="h5" fontSize="25px" margin="auto" fontFamily="SuperMario">   
-                    BUY $REDDRAGON
+                    BUY $DRAGON
                     </Paragraph> 
-                    <Paragraph variant="body2" minHeight="80px" fontSize={{xs:"17px"}}>With your wallet ready, proceed to your preferred exchange and purchase $REDDRAGON.</Paragraph>
+                    <Paragraph variant="body2" minHeight="80px" fontSize={{xs:"17px"}}>With your wallet ready, proceed to your preferred exchange and purchase $DRAGON.</Paragraph>
                 </Box>
                 </CustomGrid>
                 </CustomGrid>

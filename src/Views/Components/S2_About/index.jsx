@@ -36,7 +36,7 @@ function AboutSection() {
                 <Grid item xs={12} lg={9} display="flex" flexDirection="column" alignItems={"center"} sx={{background:"linear-gradient(to top,#000 85%,transparent 0%)", paddingBottom: '30px'}}>
                     <Image mw="200px" src={aboutImg} alt="Bighorn Reddragon"/>
                     <Paragraph fontSize={{xs:"40px",md:"50px"}} color="#fff" fontFamily="SuperMario" fontWeight="900" marginBottom={1}>
-                        $Reddragon is live!!
+                        $DRAGON is live!!
                     </Paragraph>
                     <Paragraph  color="#fff" maxWidth={740} padding={2}>
                     Dive into the fantastical world of Matt Furie's **Big Horn Red Dragon**. This vibrant creation embodies Furie's signature blend of whimsical charm and intricate detail. The Big Horn Red Dragon, with its striking red hue and majestic horns, is a testament to Furie's ability to create captivating and imaginative characters. Whether you're an art enthusiast or a newcomer to Furie's work, the Big Horn Red Dragon promises to enchant and inspire with its unique presence and story. Join us in celebrating this extraordinary piece of art and explore the magic it brings to the world.                   
