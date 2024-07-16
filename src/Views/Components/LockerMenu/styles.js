@@ -16,18 +16,19 @@ const MobileMainMenu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000;
+  background: #002768;
+  height: 50px;
   padding: 0 10px;
-  @media (min-width: 600px) {
+  border-radius: 10px;
+  @media (min-width: 899px) {
     display: none;
   }
 `;
 const SiteLogo = styled.img`
-  max-width: 200px;
-  height: auto;
-  width: 100%;
-  padding-right: 40px;
-  /* margin-top: 20px; */
+    height: auto;
+    width: 170px;
+    max-width: 100%;
+    margin-top: 8px;
 `;
 const MenuLink = styled(Link)`
   font-size: 15px;
@@ -53,6 +54,30 @@ const MenuLink = styled(Link)`
     border-width: 0px;
     /* background: red; */
   /* } */
+  &.cbutton{
+    background: #002768;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    display: inline;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+      content: 'red';
+      background: #ff0505;
+      font-size: 0;
+      color: transparent;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      position: absolute;
+      top: 16px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      padding: 10px;
+    }
+  }
     width: calc(100% - 40px);
     margin: 15px auto;
     padding: 10px 20px;
@@ -61,7 +86,7 @@ const MenuLink = styled(Link)`
 
 const DrawerBox = styled(Box)`
   width: 250px;
-  background: #000;
+  background: #002768;
   min-height: calc( 100vh );
   text-align: center;
   padding-top: 20px;
@@ -73,7 +98,7 @@ const DrawerBox = styled(Box)`
 const DrawerDivider = styled.div``
 
 const MenuButton = styled(Button)`
-  background: #000;
+  background: #002768;
   width: 35px;
   min-width: unset;
   padding-left: 6px;
@@ -84,7 +109,7 @@ const Humburgger = styled.span`
   background: ${ (props)=> props.theme.textPrimary};
   height: 24px;
   width: 30px;
-  color: #000000;
+  color: #002768;
   font-size: 5px;
   position: relative;
   border-radius: 1px;
@@ -97,11 +122,11 @@ const Humburgger = styled.span`
 
   &::after,&::before{
     content: 'menu';
-    background: #000;
+    background: #002768;
     display: block;
     height: 6px;
     width: 100%;
-    color: #000;
+    color: #002768;
   }
 
 `;

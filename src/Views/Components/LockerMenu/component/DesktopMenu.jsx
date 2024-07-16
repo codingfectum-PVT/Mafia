@@ -3,9 +3,10 @@ import logo from "../../../../assets/logo.png";
 import { MenuLink, SiteLogo } from "../styles";
 import { Box } from "@mui/material";
 import emotionStyled from "@emotion/styled";
-import { dexToolsLink, tgLink, xLink } from "../../../../links";
+import { dexToolsLink, tgLink, uniSwapLink, xLink } from "../../../../links";
 export const MenuLinkex = emotionStyled(MenuLink)`
 
+    
     // @media(min-width: 900px){
         display: inline-block;
         width: unset;
@@ -29,20 +30,28 @@ export const MenuLinkLogo = emotionStyled(MenuLink)`
 const DesktopMenu = (props) => {
  
   return (
-    <Box sx={{backgroundColor: '#000', maxWidth: 620, padding: '20px', margin: '0px auto', display: {xs:"none",sm:'flex'}, justifyContent: 'center',alignItems: 'center'}}>
-                        <MenuLinkLogo>
-                            <SiteLogo src={logo} />
-                        </MenuLinkLogo>
-                        <MenuLinkex href={dexToolsLink} target='_blank'>
-                            Dextools
-                        </MenuLinkex>
-                        <MenuLinkex href={xLink} target='_blank'>
-                            X(Twitter)
-                        </MenuLinkex>
-                        <MenuLinkex href={tgLink} target='_blank'>
-                            Telegram
-                        </MenuLinkex>
-                    </Box>
+    <Box sx={{backgroundColor: '#002768', borderRadius: 2, maxWidth: '100%', height: 50, padding: '0 20px', margin: '0px auto', display: {xs:"none",md:'flex'}, justifyContent: 'space-between',alignItems: 'center'}}>
+        <MenuLinkLogo flexBasis="200px">
+            <SiteLogo src={logo} />
+        </MenuLinkLogo>
+        <Box>
+            <MenuLinkex href='#'>
+                Home
+            </MenuLinkex>
+            <MenuLinkex href='#key-info'>
+                Key Info
+            </MenuLinkex>
+            <MenuLinkex href='#tokenomics'>
+                Tokenomics
+            </MenuLinkex>
+            <MenuLinkex href='#community'>
+                Join Community
+            </MenuLinkex>
+            <MenuLink href={uniSwapLink} target='_blank' className="cbutton">
+                Buy Now
+            </MenuLink>
+        </Box>
+    </Box>
   );
 };
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Paragraph = (props) => {
   return (
-    <Typography color="#000" textAlign="center" fontFamily="Arvo" fontSize="15px" {...props}>
+    <Typography color="#000" textAlign="center" fontFamily="Arvo" fontSize="16px" {...props}>
 {props.children}
     </Typography>
   )

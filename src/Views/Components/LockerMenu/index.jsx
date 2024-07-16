@@ -2,23 +2,29 @@ import { Container } from '@mui/material';
 import React from 'react'
 import DesktopMenu from './component/DesktopMenu';
 import MobileMenu from './component/MobileMenu';
-import { dexToolsLink, tgLink, xLink } from '../../../links';
+import { dexToolsLink, tgLink, uniSwapLink, xLink } from '../../../links';
 
 const LockerMenu = (props) => {
     const menuList = [ // You can pass 4 perameters for menu title, link, target and customClass
-        {
-        title: "Dextools",
-        link: dexToolsLink,
-        target:'_blank'
+      {
+        title: "Home",
+        link: '#',
         },
         {
-        title: "X(Twitter)",
-        link: xLink,
-        target:'_blank'
+          title: "Key Info",
+          link: '#',
         },
         {
-        title: "Telegram",
-        link: tgLink,
+          title: "Tokenomics",
+          link: '#',
+        },
+        {
+          title: "Join Community",
+          link: '#',
+        },
+        {
+        title: "Buy Now",
+        link: uniSwapLink,
         target: "_blank"
         },
     ];

@@ -1,9 +1,9 @@
-export const websiteLink = 'https://bighornreddragon.com/';
-export const tgLink = 'https://t.me/RedDragon0x79';
-export const xLink = 'https://x.com/RedDragon0x79';
-export const dexScreenerLink = 'https://dexscreener.com/ethereum/0xc5BE81916478162493B415ed80FD8D8e1EfC70f9';
-export const dexToolsLink = 'https://www.dextools.io/app/en/ether/pair-explorer/0xf37ce6d60496af56990152243700eb53fc578cd8?t=1720556873821';
-export const uniSwapLink = 'https://app.uniswap.org/#/swap?outputCurrency=0xc5BE81916478162493B415ed80FD8D8e1EfC70f9&chain=ethereum';
+export const websiteLink = '#';
+export const tgLink = '#';
+export const xLink = '#';
+export const dexScreenerLink = '#';
+export const dexToolsLink = '#';
+export const uniSwapLink = '#';
 export const buySellTax = '0/0';
-export const supply = '420,690,000,000';
-export const CA = '0xc5BE81916478162493B415ed80FD8D8e1EfC70f9';
+export const supply = 'TBA';
+export const CA = 'TBA';

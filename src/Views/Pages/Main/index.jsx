@@ -12,8 +12,7 @@ const MainPage = (props) => {
         {/* <LockerMenu /> */}
         <Header />
         <AboutSection/>
-        <Tokenomics></Tokenomics>
-        <HowToBuy />
+        <Tokenomics />
         <Footer />
     </PageWrapper>
   )
