@@ -1,5 +1,5 @@
 import emotionStyled from '@emotion/styled'
-import { Box, Container, Grid } from '@mui/material'
+import { Box, Button, Container, Grid } from '@mui/material'
 import React from 'react'
 import headerimg  from '../../../assets/header-img.jpg'
 import heading  from '../../../assets/$Mafia.png'
@@ -36,16 +36,16 @@ function Header() {
                     <Paragraph maxWidth="430px" color="#fff" fontWeight="bold" marginBottom="35px">
                     Join the MAGA MAFIA revolution where Trump takes matters into his own hands!
                     </Paragraph>
-                    <MenuLink className='cbutton' width="100%" maxWidth="650px" >
-                    <Box display={"inline-block"} width={"100%"} maxWidth={400}>
-                        <span style={{}} color="#fff" fontWeight="900">
-                            CA
-                        </span>
-                        <span style={{}} fontFamily="" sx={{wordBreak:"break-all"}} color="#fff">
-                            {CA}
-                        </span>
-                    </Box>
-                    </MenuLink>
+                    <Button className='cbutton' sx={{width:"100%"}} maxWidth="650px" >
+                        {/* <Box display={"inline-block"} width={"100%"} maxWidth={400}> */}
+                            <span style={{}} color="#fff" fontWeight="900">
+                                CA
+                            </span>
+                            <span style={{}} fontFamily="" sx={{wordBreak:"break-all"}} color="#fff">
+                                {CA}
+                            </span>
+                        {/* </Box> */}
+                    </Button>
                 </Box>
             </Grid>
         </GridEx>

@@ -45,7 +45,7 @@ const MenuLink = styled(Link)`
     color: #ffffff;
     transition-duration: 0.5s;
   }
-  @media (max-width: 599px) {
+  @media (max-width: 899px) {
     display: block;
     padding: ${ (props) => props.p? props.p: '10px'};
     text-align: center;

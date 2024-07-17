@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../../assets/logo.png";
 import { MenuLink, SiteLogo } from "../styles";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import emotionStyled from "@emotion/styled";
 import { dexToolsLink, tgLink, uniSwapLink, xLink } from "../../../../links";
 export const MenuLinkex = emotionStyled(MenuLink)`
@@ -34,7 +34,7 @@ const DesktopMenu = (props) => {
         <MenuLinkLogo flexBasis="200px">
             <SiteLogo src={logo} />
         </MenuLinkLogo>
-        <Box>
+        <Box display={"flex"} alignItems={"center"}>
             <MenuLinkex href='#'>
                 Home
             </MenuLinkex>
@@ -47,9 +47,9 @@ const DesktopMenu = (props) => {
             <MenuLinkex href='#community'>
                 Join Community
             </MenuLinkex>
-            <MenuLink href={uniSwapLink} target='_blank' className="cbutton">
+            <Button sx={{width:"fit-content"}} href={uniSwapLink} target='_blank' className="cbutton">
                 Buy Now
-            </MenuLink>
+            </Button>
         </Box>
     </Box>
   );

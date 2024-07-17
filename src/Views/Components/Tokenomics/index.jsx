@@ -39,7 +39,7 @@ function Tokenomics() {
                         <Paragraph variant="body2" fontWeight="900" color="#000" fontSize={{xs:"18px"}}>Contract Address:</Paragraph>
                         <Box display='flex'>
                             <Paragraph variant="body2" marginRight={1} fontWeight="900" color="#000" fontSize={{xs:"18px"}}>{CA}</Paragraph>
-                            <img src={copy} style={{width: '18px', height: '25px'}} />
+                            <img onClick={()=>{navigator.clipboard.writeText(CA)}} src={copy} style={{width: '18px', height: '25px'}} />
                         </Box> 
                     </Box>
                 </Grid>

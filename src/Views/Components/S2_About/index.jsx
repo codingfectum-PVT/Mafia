@@ -15,10 +15,10 @@ function AboutSection() {
             <Grid item  xs={12} md={6} style={{background:"linear-gradient(91deg, #000000 40%, transparent)"}} padding="80px 20px">
                 <Paragraph fontSize={{xs:"40px",md:"50px"}} textAlign="left" color="#fff" fontWeight="900">Key Info</Paragraph>
                 <Paragraph  color="#fff" marginY="40px" maxWidth={450} textAlign='left'>Welcome to $MAFIA, the meme token inspired by Trump's bold move to create the MAGA MAFIA after an assassination attempt. In a world where traditional power structures fail, the MAGA MAFIA rises, bringing together supporters and enthusiasts in a new decentralized community. $MAFIA is more than just a token; it's a movement, a statement, and a digital embodiment of resilience and strength.</Paragraph>
-                <Box>
-                    <MenuLink href={dexToolsLink} style={{marginRight:20, marginTop: 20}} className='cbutton' target='_blank'>Dextools</MenuLink>
-                    <MenuLink href={dexScreenerLink} style={{marginRight:20, marginTop: 20}} className='cbutton' target='_blank'>Dexscreener</MenuLink>
-                    <MenuLink href={uniSwapLink} className='cbutton' target='_blank'>Buy Now</MenuLink>
+                <Box display="flex" gap="10px" flexWrap={"wrap"}>
+                    <Button sx={{width:"fit-content"}} href={dexToolsLink}  className='cbutton' target='_blank'>Dextools</Button >
+                    <Button sx={{width:"fit-content"}} href={dexScreenerLink}  className='cbutton' target='_blank'>Dexscreener</Button >
+                    <Button sx={{width:"fit-content"}} href={uniSwapLink} className='cbutton' target='_blank'>Buy Now</Button >
                 </Box>
             </Grid>
             <Image  src={aboutImg} alt=""/>
